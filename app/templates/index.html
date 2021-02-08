@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1 class="header">Favicon to Murmurhash3</h1>
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" id="file">
+		<br />
+		<input type="submit" value="Convert" name="submit">
+	</form>
+
+	<div class="infomsg">
+		<p>
+			NB: None of the uploaded data is saved on disk.
+		</p>
+	</div>
+{% endblock %}

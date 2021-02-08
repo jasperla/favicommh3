@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.errmsg {
+	color:  red;
+}
+
+.preformatted {
+    font-family: monospace;
+    white-space: pre;
+}
+
+.infomsg {
+	color: darkgray;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #76d2b6;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

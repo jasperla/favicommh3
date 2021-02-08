@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% if error %}
+	<div class="errmsg big">Request failed:</div>
+	<div class="preformatted">{{ error }}</div>
+	{% else %}
+	<div class="errmsg_big">No error message on the error page?</div>
+	{% endif %}
+	<br />
+	<a href='/'>Go to upload form</a>
+{% endblock %}

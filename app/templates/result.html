@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1 class="header">Favicon to Murmurhash3</h1>
+	{% if hash %}
+	<div class="preformatted">http.favicon.hash={{ hash }}</div>
+	<br />
+	<a target="_blank" href="https://www.shodan.io/search?query=http.favicon.hash%3A{{ hash }}">Use this hash in Shodan.io search</a>
+	{% else %}
+	No valid hash obtained
+	{%   if error %}
+	<pre>{{ error }}</pre>
+	{%   endif %}
+	{% endif %}
+	<p><a href='/'>Go to upload form</a></p>
+{% endblock %}
